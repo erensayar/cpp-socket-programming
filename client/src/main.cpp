@@ -17,10 +17,10 @@ using namespace std;
 int main(int argc, char const *argv[]) {
 
     int client_fd;
-    char* server_ip = "127.0.0.1";
+    char *server_ip = "127.0.0.1";
     int server_port = 9999;
     struct sockaddr_in serv_addr;
-    char* client_message;
+    char *client_message;
     char buffer[1024] = {0};
 
     // Creating socket file descriptor
