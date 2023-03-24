@@ -1,5 +1,5 @@
-#include <iostream>
 #include <stdlib.h>
+#include <stdio.h>
 #include <string.h>
 #include <unistd.h>
 
@@ -46,13 +46,13 @@ int main(int argc, char const *argv[]) {
     socket_address.sin_port = htons(port);
 
     // Binding 
-    if (bind(server_fd, (struct sockaddr *)&socket_address, sizeof(socket_address)) < 0){
+    if (bind(server_fd, (struct sockaddr *)&socket_address, sizeof(socket_address)) < 0) {
         perror("bind failed");
         exit(EXIT_FAILURE);
     }
 
     // Listen
-    if (listen(server_fd, 3) < 0){
+    if (listen(server_fd, 3) < 0) {
         perror("listen");
         exit(EXIT_FAILURE);
     }
@@ -65,7 +65,7 @@ int main(int argc, char const *argv[]) {
 
     // Chat
     bool connection = true;
-    while(connection = true){
+    while(connection = true) {
 
         // Read
         if((read(new_socket, buffer, 1024)) < 0) {

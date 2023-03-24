@@ -1,4 +1,3 @@
-#include <iostream>
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -34,8 +33,8 @@ int main(int argc, char const *argv[]) {
     //cin >> server_ip;
     //cout << "Enter Server Bind Port: ";
     //cin >> server_port;
-    cout << "\nserver_ip: " << server_ip << endl;
-    cout << "server_port: " << server_port << endl;
+    printf("\nserver_ip: %s\n", server_ip);
+    printf("server_port: %s\n", server_port);
 
     serv_addr.sin_family = AF_INET;
     serv_addr.sin_port = htons(server_port);
@@ -54,7 +53,7 @@ int main(int argc, char const *argv[]) {
 
     // Chat
     bool connection = true;
-    while(connection = true){
+    while(connection = true) {
         
         printf("Enter The Message: ");
         scanf("%s", &client_message);
@@ -70,7 +69,7 @@ int main(int argc, char const *argv[]) {
             printf("\nRead Failed \n");
             return -1;
         }
-        cout << "Server Message: " << buffer << endl;
+        printf("Server Message:  %s\n", buffer);
 
         // Loop execute
         if(client_message == "con=false") {
