@@ -29,10 +29,6 @@ int main(int argc, char const *argv[]) {
         return -1;
     }
 
-    //cout << "Enter Server Ip: ";
-    //cin >> server_ip;
-    //cout << "Enter Server Bind Port: ";
-    //cin >> server_port;
     printf("\nserver_ip: %s\n", server_ip);
     printf("server_port: %s\n", server_port);
 

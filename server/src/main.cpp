@@ -39,8 +39,6 @@ int main(int argc, char const *argv[]) {
     }
 
     // Set socket options
-    //cout << "Enter Port To Binding: ";
-    //cin >> port;
     socket_address.sin_family = AF_INET;
     socket_address.sin_addr.s_addr = INADDR_ANY;
     socket_address.sin_port = htons(port);
