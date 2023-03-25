@@ -5,7 +5,7 @@
 
 # Logic
 
-![Logic](dev-docs/cpp-network-programming.png)
+![Logic](dev-docs/server-client-pattern.png)
 
 # Source
 
